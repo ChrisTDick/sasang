@@ -20,7 +20,7 @@ def index():
 @app.route('/<session_id>')
 def chat(session_id):
  	token=opentok_sdk.generate_token(session_id)
- 	return render_template('index.html', api_key= api_key, session_id=session_id, token=token)
+ 	return render_template('index.html', api_key=api_key, session_id=session_id, token=token)
 
 if __name__ == '__main__':
 	app.run(debug=True)
