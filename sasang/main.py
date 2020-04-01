@@ -23,4 +23,4 @@ def chat(session_id):
  	return render_template('index.html', api_key=api_key, session_id=session_id, token=token)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=True, host='0.0.0.0')
